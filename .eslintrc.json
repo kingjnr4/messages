@@ -1,0 +1,80 @@
+{
+  "extends": [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "@react-native-community",
+    "plugin:react/jsx-runtime",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["@typescript-eslint", "react", "prettier"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "project": "./tsconfig.json"
+  },
+  "rules": {
+    "import/no-unresolved": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".ts", ".tsx"]
+      }
+    ],
+    "prettier/prettier": [
+      "error",
+      {
+        "trailingComma": "all",
+        "arrowParens": "avoid",
+        "endOfLine": "auto"
+      }
+    ],
+    "react-native/no-unused-styles": 2,
+    "react-native/split-platform-components": 2,
+    "react-native/no-inline-styles": 0,
+    "react-native/no-color-literals": 0,
+    "react-native/no-raw-text": 0,
+    "import/no-extraneous-dependencies": 2,
+    "import/extensions": ["error", "never", { "svg": "always" }],
+    "import/order": ["error", { "newlines-between": "always" }],
+    "import/no-duplicates": 2,
+    "import/no-useless-path-segments": 2,
+    "import/no-cycle": [2, { "ignoreExternal": true }],
+    "import/prefer-default-export": 0,
+    "import/named": 0,
+    "import/namespace": 0,
+    "import/default": 0,
+    "react/require-default-props":0,
+    "react/jsx-no-useless-fragment":0,
+    "import/no-named-as-default-member": 0,
+    "import/no-named-as-default": 0,
+    "import/no-unused-modules": 0,
+    "import/no-deprecated": 0,
+    "@typescript-eslint/indent": 0,
+    // "import/no-anonymous-default-export": 2,
+    // "import/no-default-export": 2,
+    "react-hooks/rules-of-hooks": 2,
+    "react-hooks/exhaustive-deps": [
+      "error",
+      { "additionalHooks": "(useMemoOne)" }
+    ],
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["off"],
+    "react/prop-types": 0,
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "quotes": [
+      "error",
+      "double",
+      {
+        "avoidEscape": true
+      }
+    ],
+    "max-len": ["error", 120]
+  }
+}

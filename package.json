@@ -1,0 +1,51 @@
+{
+  "name": "tacky",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@types/react": "~18.0.27",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "expo": "^49.0.5",
+    "expo-asset": "~8.9.1",
+    "expo-font": "~11.1.1",
+    "expo-status-bar": "~1.4.4",
+    "nativewind": "^2.0.11",
+    "react": "^18.2.0",
+    "react-native": "^0.72.3",
+    "typescript": "^5.1.6",
+    "zustand": "^4.3.9"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@react-native-community/eslint-config": "^3.2.0",
+    "@typescript-eslint/parser": "5.55.0",
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "19.0.4",
+    "eslint-plugin-import": "^2.25.3",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "husky": ">=6",
+    "lint-staged": ">=10",
+    "prettier": "^2.8.4",
+    "tailwindcss": "^3.3.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "private": true,
+  "lint-staged": {
+    "*.{ts,tsx,jsx,js}": "eslint --cache --fix"
+  }
+}
